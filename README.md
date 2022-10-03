@@ -10,8 +10,8 @@ I. Establezca el color de todos los elementos `<p>` en rojo.
 
 ```
 <style>
- tuCodigoAca {
-  tuCodigoAca: red;
+ p {
+  color: red;
 }
 </style>
 ```
@@ -20,8 +20,8 @@ II. Establezca el color del elemento con id="para1", en rojo.
 
 ```
 <style>
- tuCodigoAca {
-  tuCodigoAca: red;
+ #para1 {
+  color: red;
 }
 </style>
 
@@ -35,8 +35,8 @@ III. Establezca el color de todos los elementos con la clase colortexten rojo.
 
 ```
 <style>
- tuCodigoAca {
-  tuCodigoAca: red;
+ .colortext {
+  color: red;
 }
 </style>
 
@@ -52,8 +52,8 @@ IV. Cambia el color de todos los elementos `<p>` y `<h1>` a "rojo". Agrupe los s
 
 ```
 <style>
- tuCodigoAca {
-  tuCodigoAca: red;
+ h1,p {
+  color: red;
 }
 </style>
 
@@ -69,7 +69,7 @@ V. Agregue una hoja de estilo externa con la URL: "mystyle.css".
 
 ```
 <head>
-tuCodigoAca
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -83,8 +83,9 @@ VI. Inserte las partes que faltan para que el código CSS sea correcto.
 
 ```
 <style>
-p
-  color red;
+p{
+  color: red;
+  }
 
 </style>
 ```
@@ -94,7 +95,7 @@ VII. Utilice la propiedad abreviada border para establecer un borde "4px", "punt
 ```
 <style>
 p {
-  tuCodigoAca: tuCodigoAca;
+  border: 4px dotted red;
 }
 </style>
 
@@ -112,7 +113,7 @@ VIII. Utilice la propiedad de borde correcta para establecer el color del borde 
 p {
   border-style: dotted;
   border-width: 4px;
-  tuCodigoAca: red;
+  border-color: red;
 }
 </style>
 
@@ -128,7 +129,7 @@ IX. Agregue un margen izquierdo de 20 píxeles al elemento `<h1>`.
 ```
 <style>
 h1 {
-  tuCodigoAca: 20px;
+  margin-left: 20px;
 }
 </style>
 
@@ -144,7 +145,7 @@ X. Utilice la propiedad margin abreviada para agregar márgenes superior e infer
 ```
 <style>
 h1 {
-  margin: tuCodigoAca;
+  margin: 20px 40px;
 }
 </style>
 
@@ -160,7 +161,7 @@ XI. Utilice la marginpropiedad para alinear al centro el elemento `<h1>`.
 ```
 <style>
 h1 {
-  margin: tuCodigoAca;
+  margin: center;
 }
 </style>
 
@@ -176,7 +177,7 @@ XII. Establezca el relleno superior del elemento `<h1>` en 30 píxeles.
 ```
 <style>
 h1 {
-  tuCodigoAca: 30px;
+  padding-top: 30px;
 }
 </style>
 
@@ -192,7 +193,7 @@ XIII. Use la propiedad de relleno abreviado para agregar 10 píxeles de relleno 
 ```
 <style>
 h1 {
-  padding: tuCodigoAca px tuCodigoAca px;
+  padding: 40px 10px;
 }
 </style>
 
@@ -208,7 +209,7 @@ XIV. Establezca la altura del elemento `<h1>` en "100px".
 ```
 <style>
 h1 {
-  tuCodigoAca: 100px;
+  height: 100px;
 }
 </style>
 
@@ -224,7 +225,7 @@ XV. Establezca el ancho del elemento `<h1>` en "50 %".
 ```
 <style>
 h1 {
-  tuCodigoAca: 50%;
+  width: 50%;
 }
 </style>
 
@@ -239,8 +240,8 @@ XVI. Establezca el ancho del elemento `<div>` en "200px".
 
 ```
 <style>
- tuCodigoAca{
-  tuCodigoAca: tuCodigoAca;
+ div{
+  width: 200px;
 }
 </style>
 
@@ -264,7 +265,7 @@ div {
   width: 200px;
   border: 2px solid red;
   padding: 25px;
-  tuCodigoAca: 25px;
+  margin-left: 25px;
 }
 </style>
 
@@ -287,7 +288,7 @@ XVIII. Fuerce una barra de desplazamiento al elemento `<div>` con class="intro".
 .intro {
   width: 200px;
   height: 70px;
-  tuCodigoAca: tuCodigoAca;
+  overflow: scroll;
 }
 </style>
 
@@ -311,7 +312,7 @@ XIX. Especifique que el texto desbordado en el elemento `<div>` no debe ser visi
 .intro {
   width: 200px;
   height: 70px;
-  tuCodigoAca: tuCodigoAca;
+  overflow: hidden;
 }
 </style>
 
@@ -335,7 +336,7 @@ XX. Agregue una barra de desplazamiento horizontal al elemento `<div>`.
 .intro {
   width: 200px;
   height: 70px;
-  tuCodigoAca: tuCodigoAca;
+  overflow-x: scroll;
 }
 </style>
 
